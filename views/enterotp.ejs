@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="/stylesheets/code.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700%7CRoboto+Slab:400,700%7CMaterial+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+   
+        
+
+      </head>
+
+<body>
+    <div class="wrapper wrapper-full-page">
+
+        <div class="page-header login-page header-filter">
+
+
+
+            <div class="container" data-aos="zoom-in">
+
+
+                <div class="row note">
+                    <!-- <div class="note">
+                        <p> <span>Note:</span> Restricted area Only for Members/Client.
+                            <br> ID & Password Provided By Admin when Choose any Service </p>
+
+                        <a [routerLink]="['/']" class="btn btn-rose btn-link btn-lg">
+                            Back To Home</a>
+                    </div> -->
+                    <div class="col-lg-4 col-md-6 col-sm-8 ml-auto mr-auto">
+                       
+                            <div class="card card-login card-hidden">
+                                <div class="card-header card-header-rose text-center">
+                                    <h4 class="card-title">Reset Password</h4>
+                                    <div class="social-line">
+                                      
+                                        <a href="#pablo"  class="btn btn-just-icon btn-link btn-white">
+                                            <i class="material-icons" id="ïcon">vpn_key</i>
+                                          </a>
+                                    </div>
+                                </div>
+                                <div class="card-body ">
+                                    <p class="card-description text-center" style="font-family: Georgia, 'Times New Roman', Times, serif;">Enter your OTP</p>
+                                    <!-- <span class="bmd-form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="material-icons">face</i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="First Name...">
+                                        </div>
+                                    </span> -->
+                                    <span class="bmd-form-group">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">
+                                                    <i class="material-icons">
+                                                        enhanced_encryption</i>
+                                                </span>
+                                            </div>
+                                            
+                                            <form action="/changepassword" onsubmit="return validate()" method="POST">
+                                              <input type="hidden" id="otp" value="<%=otp %>"> 
+                                              <input type="hidden" name="email" value="<%=email %>"> 
+                                              <input type="tel"  class="form-control" placeholder="OTP.." id="userotp"  required>
+                                              <div class="card-footer justify-content-center">
+                                                <input type="submit" class="btn btn-rose btn-link btn-lg" value="submit"></button>
+                                              </div>
+                                              </form>
+                                              <script>
+                                                function validate(){
+                                                  var otp= document.getElementById('otp').value
+                                                  var userotp= document.getElementById('userotp').value
+                                                  if(otp==userotp){
+                                                      alert("correct")
+                                                    
+                                                    return true;
+                                                      
+                                                  }else{
+                                                      alert('Invalid Otp')
+                                                      return false;
+                                                  }
+                                                }
+                                            </script>
+                                           
+                                        </div>
+                                    </span>
+                                    
+                                </div>
+                               
+                               
+                               
+                            </div>
+                        
+
+                        
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+    <footer id="footer">
+        <div class="footer-top">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6 footer-info">
+                <h3>
+                  <img
+                    src="../../../../../assets/img/brand/white.png"
+                    alt=""
+                    srcset=""
+                  />
+                </h3>
+                <p>
+                  Whatever may be your requirement - be it a simple website design, a
+                  complex data driven web application development, an ecommerce
+                  website, a native or cross platform mobile app development, a logo
+                  and brand identity design, a video production or a full fledged
+                  digital marketing campaign - we have a solution for you.
+                </p>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li>
+                    <i class="fa fa-chevron-right"></i> <a routerLink="/">Home</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-chevron-right"></i>
+                    <a routerLink="/service">Services</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-chevron-right"></i>
+                    <a routerLink="/packages">Packages</a>
+                  </li>
+                 
+                  <li>
+                    <i class="fa fa-chevron-right"></i>
+                    <a routerLink="/about">About us</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-chevron-right"></i>
+                    <a routerLink="/about/contact-us">Contact us</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-chevron-right"></i>
+                    <a routerLink="/auth/login">Login</a>
+                  </li>
+                </ul>
+              </div>
+      
+              <div class="col-lg-3 col-md-6 footer-contact">
+                <h4>Contact Us</h4>
+                <p>
+                  <i class="fa fa-location-arrow" aria-hidden="true"></i> D-108, Manak
+                  Vihar,Patel Nagar, <br />
+                  <span style="margin-left: 15px;"></span>
+                  Bhopal, MP, India (462022) <br />
+                  <strong><i class="fa fa-phone" aria-hidden="true"></i></strong>
+                  <a href="tel:918539082232"> +91 8539082232</a><br />
+                  <i class="fa fa-phone-square" aria-hidden="true"></i>
+                  <a href="tel:07554949433"> 0755-4949433</a><br />
+                  <i class="fa fa-envelope-open" aria-hidden="true"></i>
+                  <a href="mailto:info@eduvita.in">
+                    info@eduvita.in</a
+                  ><br />
+                </p>
+                <h4 style="margin-top: 10px;">Working Hour</h4>
+                <p>
+                  Mon-Fri: 9:00 AM - 5:00PM <br />
+                  For Regular Client 24*7
+                </p>
+      
+                
+              </div>
+      
+              <div class="col-lg-3 col-md-6 footer-newsletter">
+                <h4>Our Newsletter</h4>
+                <p>Enter your email ID below to subscribe to our newsletter.</p>
+                <form action="" method="post">
+                  <input type="email" name="email" /><input
+                    type="submit"
+                    value="Subscribe"
+                  />
+                </form>
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr
+          style="
+            height: 0.3px;
+            background-color: rgb(70, 68, 68);
+            margin: 0;
+            padding: 0;
+          "
+        />
+        <div class="container">
+          <div class="copyright">
+            Powered By: ITE infotech pvt. ltd., In colleboration with Puffin Softwares
+            
+            
+            | <a href="">Terms & Conditions </a> | <a href="">Privacy Policy</a> |
+            <a href="">Sitemap</a>
+          </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(
+            {
+                duration: 1000,
+            }
+        );
+    </script>
+</body>
+
+</html>
