@@ -24,8 +24,8 @@ const crypto = require('crypto')
 let mailTransporter = nodemailer.createTransport({ 
 	service: 'gmail', 
 	auth: { 
-		user: 'kavitaprajapati132004@gmail.com', 
-		pass: 'Kavita@123.'
+		user: 'your-eamil@gmail.com', 
+		pass: 'password'
 	} 
 }); 
 router.post("/register",(req,res)=>{
